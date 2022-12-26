@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333;}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+body{font-family: 'RIDIBatang'; color: #333; line-height: 28px;}
+
+#header{width: 100%; height: 120px; 
+    position: absolute; top: 0; left: 0;
+    
+    z-index: 2;
+}
+
+.header_inner{width: 1000px; margin: 0 auto;}
+
+
+
+/*top*/
+.top{float: right;}
+.top li{float: left; padding: 5px 15px;}
+.top li a{display: block; font-size: 13px;}
+
+/*nav*/
+.nav{float: right; clear: both; margin-top: 44px; width: 560px; text-align: center; }
+.nav li{float: left;width: 25%; box-sizing: border-box;}
+.nav> li> a{display: block; font-size: 20px; padding: 0 20px;padding-bottom: 20px;}
+.nav> li> a:hover{color: #333;}
+.nav:hover{background-color: #fff;}
+
+.solid{width: 100%; margin:auto;
+    
+    height:3px;
+    background:#333;
+    visibility:hidden;
+    opacity:0;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.5s;}
+
+.nav> li> a:hover .solid{transform:scaleX(1);
+    opacity:1;
+    visibility:visible;}
+
+    /*sub*/
+.sub {width: 100%;display: none; background-color: #fff;position: absolute; top:120px; left: 0;padding-left: 892px; box-sizing: border-box;}
+.sub ul{float: left; width: 140px;}
+.sub ul li{width: 100%; margin-bottom: 15px;}
+.sub  ul li a{ margin: 20px 0; font-size: 14px;}
+.sub ul li a:hover{border-bottom: 1px #333 solid; }
+
+/* .nav:hover .sub{display: block;} */
+.header_inner img{position: absolute;top: 13px;left: 335px;}
+
+#header:hover{background-color: #fff;}
+
+/*main banner*/
+.main_banner{width: 100%;}
+.main_banner img{width: 100%;}
+
+/*con1*/
+.con1{width:100%;overflow: hidden;}
+.con1_box{width: 1320px;margin: 100px auto;}
+.con1_inner{width: 100%;  box-sizing: border-box; margin-bottom: 100px;height: 600px;}
+.con1_inner li{float: left; width: 660px; box-sizing: border-box;}
+.con1_inner1{width: 1320px; box-sizing: border-box; overflow: hidden;}
+.con1_inner1 li{float: left; width: 660px;height: 600px; box-sizing: border-box;}
+.con1_1{background: url(../images/con1_color1.png) no-repeat left top;}
+.con1_2{background: url(../images/con1_color2.png) no-repeat left top;}
+.con1_inner1 li:nth-child(2){width: 610px; margin-left: 50px;}
+.con1_1, .con1_2{padding: 120px 0 0 80px; box-sizing: border-box;}
+.con1 h1{margin-bottom: 30px; }
+
+/*banner*/
+.banner{width: 100%;}
+.banner img{width: 100%;display: block;}
+
+/*con2, icon*/
+.con2{width: 100%; height:500px;}
+.icon{width: 1200px; margin: 100px auto; overflow: hidden;}
+.icon li{width: 400px; float: left; padding: 0 100px; box-sizing: border-box;}
+.icon li div{width: 100%;text-align: center;margin-bottom: 40px; box-sizing: border-box;}
+
+/*con3*/
+.con3{width: 100%; overflow: hidden;}
+.con3 ul{width: 1200px; margin: 60px auto;overflow: hidden;}
+.con3 ul li{float: left;overflow: hidden;}
+.con3 ul li img{display: block;transition: all 0.5s linear;}
+.con3 ul li img:hover{transform: scale(1.05,1.05); }
+.con3 ul li:nth-child(1){margin-right: 50px; box-sizing: border-box;}
+.con3 ul li:nth-child(3){width: 100%; border: 1px solid #000; text-align: center; height: 100px; padding-top: 35px; font-size: 35px; box-sizing: border-box; margin: 40px 0;}
+.con3 ul li:nth-child(4){margin-right: 50px; box-sizing: border-box;}
+.con3 ul li:nth-child(5){margin-right: 50px; box-sizing: border-box;}
+.con3 ul li:nth-child(6){margin-bottom: 50px; box-sizing: border-box;}
+
+/*footer*/
+.footer{width: 100%; height: 395px; background: url(../images/footer_bubble.png)no-repeat center top; position: relative; margin-top: 100px;}
+.footer_inner{width: 310px; height: 140px; margin: 100px auto; font-size: 14px; text-align: center; padding-top: 80px;}
+.footer_logo img{width: 166px;}
+.footer p{margin: 10px 0;}
+.footer_icon li{float: left;margin-left: 17px;}
+.footer_icon li a{display: inline-block; padding:10px;}
+
+.top_icon{position:fixed; bottom:50px; right:50px; display:none;z-index: 99;}
